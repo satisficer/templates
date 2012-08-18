@@ -1,0 +1,18 @@
+To: address@example.com
+Subject: Subject
+Content-Type: text/html; charset="us-ascii"
+/* You can of course add more header lines if necessary. */
+
+<html>
+	... your carefully crafted html content ...
+</html>
+
+--
+
+You of course have to replace the To address and the subject line.
+
+Save this as mail_html.html.
+
+Use sendmail to send this message:
+
+/usr/sbin/sendmail address@example.com < mail_html.html 
